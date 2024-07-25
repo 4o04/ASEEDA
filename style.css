@@ -1,0 +1,362 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+    /* background-image: url(./imgs/money-2696229_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: gold;
+    width: 100%;
+    height: auto;
+}
+
+#side-bar {
+    height: 100vh;
+    width: 20%;
+    float: left;
+    background: lawngreen;
+    transition: 2ms;
+    z-index: 99;
+
+}
+
+.logo img {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 80px;
+    top: 10px;
+}
+
+#icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#icon::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: black;
+    transform: translateY(-10px);
+}
+
+#icon::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: black;
+    box-shadow: 0 10px 0 0;
+}
+
+#list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}   
+
+#list ul li {
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#list ul li:hover {
+    border: 2px thin;
+    background: #7DCEA0;
+    transition: 1ms;
+    color: white;
+    height: 40px;
+    border-left: 2px solid black;
+} 
+
+#list ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#main-content {
+    transition: margin-left 0.2s ease; 
+}
+
+.navbar {
+   height: 60px; 
+   display: flex;
+   justify-content: center;
+   padding-left: 10px;
+   padding-top: 5px;
+}
+
+.navbar #search {
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    right: 10px;
+}
+
+.mobile .mob-con {
+    display: none;
+}
+
+/* .sidebar-hidden #main-content {
+    margin-left: 0;
+} */
+
+
+
+
+
+
+
+
+img{
+    width: 90px;
+    height: 10vh;
+    border-radius: 12px;
+  }
+  .container{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+   
+  }
+  .container >h2,p{
+    margin-left: 60px;
+    margin: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  }
+  .user-image{
+    margin-left: 6px;
+  }
+  
+  .summary-period{
+    display: grid;
+    grid-template-rows: repeat(3,400px);
+    grid-template-columns: repeat(3,330px);
+    gap: 20px;
+    position: relative;
+    width: 70%;
+    height: 50rem;
+    left: 15%;
+    border: 1px solid black;
+    background-color: rgb(231, 227, 227);
+    padding: 20px;
+  }
+  .cash-bank{
+    
+  }
+  .income{
+    
+  }
+  .other-asset{
+    
+  }
+  .state{
+    /* border: 1px solid black; */
+    margin: 0px;
+  }
+  .state h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+  }
+  .state p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .bank-details{
+    height: 20vh;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .cash{
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  .amount{
+    margin-top:2rem ;
+    margin-right: 2rem;
+  }
+  
+  .bank1{
+    height: 10vh;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .bank1 div{
+    margin-left: 2rem ;
+    margin-top: 1rem;
+  }
+  .bank2{
+    height: 10vh;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .bank2 div{
+    margin-left: 2rem ;
+    margin-top: 1rem;
+  }
+  .income-in{
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .income-in div{
+    margin-left: 4rem ;
+    margin-top: 1rem;
+    
+  }
+  .assets{
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .assets div{
+    margin-left: 4rem ;
+    margin-top: 1rem; 
+  }
+  .oweings{
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .oweings div{
+    margin-left: 4rem ;
+    margin-top: 1rem; 
+  }
+  
+  ol li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: initial;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  
+  /* index.html styling */
+  .grid-box{
+    display: grid;
+    grid-template-rows: repeat(4,auto);
+    grid-template-columns: repeat(4,auto);
+    grid-auto-rows: 400px;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .grid{
+    border-radius: 10%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20%;
+    
+  }
+
+@media screen and (max-width:786px) {
+    body {
+        width: 100%;
+        height: auto;
+        background-color: gold;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    #side-bar {
+        width: 100%;
+        /* height: 100vh; */
+        transition: 200ms;
+        /* background: lightgreen; */
+    }
+
+    #icon {
+        position: absolute;
+        top: 10px;
+        left: 340px;
+        width: 40px;
+        height: 40px;
+        background: white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        left: 12px;
+        top: 10px;
+    }
+
+    #list {
+        position: absolute;
+        left: 110px;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        margin-top: 50px;
+    }
+
+    #list ul li:hover {
+        border-right: 2px solid black;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .mobile .mob-con {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 200px;
+        /* left: 15px;  */
+    }
+
+    .mob-con button {
+        width: 250px;
+        height: 50px;
+        margin-top: 10px;
+        border-radius: 50px;
+    }
+
+    .mob-con .H2 {
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+    
+    #main-content, .navbar {
+        display: none;
+    }
+}
+
